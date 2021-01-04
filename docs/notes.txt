@@ -1,0 +1,4 @@
+sass --watch assets/sass:assets/css --no-source-map /// a[href*="economia"]{
+color: #ff00000; } /// a[href^="http"]{ color: #ff00000; } /// "^" para
+selecionar os elementos que o conteudo do atribudo começam com "http" ///
+div:empty{ background-color: #ff0000 }

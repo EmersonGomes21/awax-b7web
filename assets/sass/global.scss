@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  transition: all 0.4 linear;
+}
+:root {
+  --color-primary: #b28756;
+}
+body {
+  overflow-x: hidden;
+}
+
+.p-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: var(--color-primary);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
