@@ -151,7 +151,7 @@ header {
     font-size: 20px;
   }
   .section_desc {
-    font-size: 12px;
+    font-size: 10px;
     color: #ccc;
     margin: 10px 0 40px 0;
   }
@@ -188,14 +188,17 @@ header {
 
 .section_about_us {
   display: flex;
+  flex-wrap: wrap;
 
   .section_about_us_left {
     padding: 20px;
     flex: 1;
+
     p {
       text-align: initial;
       font-size: 14px;
       line-height: 25px;
+      min-width: 292px;
     }
   }
   .section_about_us_right {
@@ -212,11 +215,14 @@ header {
 
 .section_services {
   display: flex;
+  flex-wrap: wrap;
   .section_service {
     flex: 1;
     text-align: center;
     border-right: 1px solid #333;
     padding: 15px;
+    min-width: 260px;
+    margin-top: 20px;
     &:first-child {
       border-left: 1px solid #333;
     }
@@ -689,7 +695,6 @@ header {
     }
     .section_product_premium_right {
       width: 450px;
-
       order: 1;
       display: flex;
       justify-content: flex-end;
@@ -708,6 +713,213 @@ header {
     }
   }
 }
+// css some facts
+
+.section_facts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  .section_fact {
+    flex: 1;
+    text-align: center;
+    // border-right: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // &:first-child {
+    //   border-left: 1px solid #333;
+    // }
+    padding: 20px 40px;
+    h1 {
+      color: var(--color-primary);
+      font-size: 50px;
+    }
+    .line {
+      margin-top: 5px;
+      display: flex;
+      width: 25px;
+      height: 4px;
+      background-color: #aaa;
+    }
+    h4 {
+      margin-top: 10px;
+      text-transform: uppercase;
+      font-size: 17px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #999;
+      min-width: 189px;
+      max-width: 190px;
+      text-align: center;
+      line-height: 20px;
+    }
+  }
+}
+
+// css redes sociais
+
+.redes_sociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon_share {
+    display: flex;
+    align-items: center;
+    img {
+    }
+    span {
+      margin: 0 40px 0 15px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #aaa;
+    }
+  }
+
+  .section_redes_sociais {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 30px 0;
+    max-width: 790px;
+    flex-wrap: wrap;
+
+    .rede_social {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        display: flex;
+        border-radius: 50%;
+        padding: 6px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-width: 25px;
+        transition: all 0.3 linear;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        img {
+          width: 10px;
+          height: 13px;
+        }
+      }
+      span {
+        font-size: 9px;
+        margin-left: 7px;
+        color: #aaa;
+        font-weight: 700;
+      }
+      a.facebook img {
+        width: 7px;
+        height: 13px;
+      }
+      a.twitter {
+        background-color: rgb(78, 199, 230);
+      }
+      a.linkedin {
+        background-color: rgb(46, 129, 238);
+      }
+      a.facebook {
+        background-color: rgb(28, 68, 143);
+      }
+      a.googleplus {
+        background-color: rgb(206, 104, 8);
+      }
+      a.pinterest {
+        background-color: rgb(192, 77, 62);
+      }
+    }
+  }
+}
+
+// css contact us
+
+.contact_us {
+  form {
+    a.p-button {
+      display: flex;
+      max-width: 170px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 8px;
+      margin: 30px auto;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: center;
+
+  .flex {
+    display: flex;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    flex: 1;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .label {
+    color: #aaa;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .input {
+    width: 100%;
+    border: none;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #aaa;
+    color: var(--color-primary);
+    font-size: 10px;
+    transition: all 0.3s linear;
+    &:focus {
+      padding: 10px 0;
+    }
+  }
+  section:nth-child(3) {
+    margin-top: 50px;
+  }
+}
+
+// css section map
+
+.section_map {
+  background-image: url("../images/mapa.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+
+  .section_map_area {
+    width: 100vw;
+    max-width: 1140px;
+
+    .section_map_info {
+      width: 50%;
+      padding: 30px;
+
+      margin: auto;
+      margin-left: 100px;
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+// media querys
 @media (max-width: 450px) {
   .section_body.premium .section_product_premium {
     .section_product_premium_left {
@@ -725,3 +937,5 @@ header {
     }
   }
 }
+
+// end media querys
