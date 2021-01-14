@@ -11,8 +11,11 @@
   --color-primary: #b28756;
 }
 
-body {
+body,
+html {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .p-button {
