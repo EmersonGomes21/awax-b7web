@@ -15,6 +15,7 @@ header {
 }
 .logo {
   width: 100px;
+  margin-left: 20px;
 
   .logo_img {
     margin: 10px auto;
@@ -1161,9 +1162,6 @@ header {
 }
 // css for tablets
 @media (min-width: 450px) and (max-width: 1024px) {
-  .logo {
-    margin-left: 30px;
-  }
   .menu .menu-opener {
     display: block;
     width: 45px;
@@ -1258,9 +1256,6 @@ header {
 }
 // css for phone
 @media (max-width: 450px) {
-  .logo {
-    margin-left: 30px;
-  }
   .menu .menu-opener {
     display: block;
     width: 45px;
@@ -1400,9 +1395,6 @@ header {
 }
 
 @media (max-width: 390px) {
-  .logo {
-    margin-left: 30px;
-  }
   .menu .menu-opener {
     display: block;
     width: 45px;
