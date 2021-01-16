@@ -136,7 +136,7 @@ header {
     width: 100vw;
     height: 20px;
     position: absolute;
-    margin-top: -50px;
+    margin-top: -70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1396,7 +1396,7 @@ header {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 390px) {
   .logo {
     margin-left: 30px;
   }
@@ -1474,6 +1474,9 @@ header {
 
   .section_team {
     max-width: 280px;
+    .sliders .slide {
+      max-width: 260px;
+    }
   }
 
   .redes_sociais {
