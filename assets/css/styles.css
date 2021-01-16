@@ -472,6 +472,7 @@ header {
   color: #333;
   margin-top: 5px;
   font-weight: 600;
+  text-align: center;
 }
 .client .section_client .quote {
   margin: 20px 0 10px 0;
