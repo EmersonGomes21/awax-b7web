@@ -41,6 +41,13 @@ header {
 
   .menu-opener {
     display: none;
+    .mm_line {
+      display: flex;
+      width: 100%;
+      height: 5px;
+      background-color: var(--color-primary);
+      margin: 10px 0;
+    }
   }
 
   ul {
