@@ -41,12 +41,14 @@ header {
 
   .menu-opener {
     display: none;
+
     .mm_line {
       display: flex;
-      width: 100%;
-      height: 5px;
+      width: 50px;
+      height: 6px;
       background-color: var(--color-primary);
       margin: 10px 0;
+      border-radius: 10px;
     }
   }
 
