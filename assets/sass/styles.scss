@@ -117,6 +117,10 @@ header {
           }
 
           @media (max-width: 425px) {
+            font-size: 30px;
+          }
+
+          @media (max-width: 340px) {
             font-size: 25px;
           }
         }

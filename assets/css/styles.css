@@ -119,6 +119,11 @@ header {
 }
 @media (max-width: 425px) {
   .banner .sliders .slide .slidearea h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 340px) {
+  .banner .sliders .slide .slidearea h1 {
     font-size: 25px;
   }
 }
