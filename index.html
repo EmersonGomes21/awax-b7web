@@ -967,14 +967,14 @@
     <script type="text/javascript">
       window.onload = function () {
         document
-          .querySelector(".menuMobile")
+          .querySelector(".menu")
           .addEventListener("click", function () {
             if (
-              document.querySelector(".menu nav ul").style.display == "flex"
+              document.querySelector("nav").style.display == "flex"
             ) {
-              document.querySelector(".menu nav ul").style.display = "none";
+              document.querySelector("nav").style.display = "none";
             } else {
-              document.querySelector(".menu nav ul").style.display = "flex";
+              document.querySelector("nav").style.display = "flex";
             }
           });
       };
