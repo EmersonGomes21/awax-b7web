@@ -19,7 +19,7 @@ html {
 }
 
 .p-button {
-  display: inline-block;
+  display: flex;
   text-decoration: none;
   color: #fff;
   background: var(--color-primary);
@@ -31,6 +31,7 @@ html {
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s linear;
+  width: max-content;
 }
 .p-button:hover {
   opacity: 0.8;

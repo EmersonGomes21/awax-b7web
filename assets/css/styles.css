@@ -104,6 +104,16 @@ header {
   font-size: 50px;
   font-weight: bold;
 }
+@media (max-width: 610px) {
+  .banner .sliders .slide .slidearea h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 425px) {
+  .banner .sliders .slide .slidearea h1 {
+    font-size: 25px;
+  }
+}
 .banner .sliders .slide .slidearea h1:nth-child(2) {
   color: var(--color-primary);
 }
@@ -180,7 +190,6 @@ header {
   flex-wrap: wrap;
 }
 .section_about_us .section_about_us_left {
-  padding: 20px;
   flex: 1;
 }
 .section_about_us .section_about_us_left p {
@@ -188,6 +197,22 @@ header {
   font-size: 14px;
   line-height: 25px;
   min-width: 292px;
+  padding: 20px;
+}
+@media (max-width: 800px) {
+  .section_about_us .section_about_us_left p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 25px;
+    min-width: 292px;
+    padding: 20px;
+  }
+  .section_about_us .section_about_us_left a.p-button {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    width: max-content;
+  }
 }
 .section_about_us .section_about_us_right {
   padding: 20px;
@@ -197,6 +222,11 @@ header {
 .section_about_us .section_about_us_right img {
   width: 480px;
   box-shadow: 0px 4px 7px #333;
+}
+@media (max-width: 500px) {
+  .section_about_us .section_about_us_right img {
+    max-width: 100%;
+  }
 }
 
 .section_services {
@@ -229,6 +259,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.section_projects a {
+  margin: 20px auto;
 }
 .section_projects .section_projects_filters {
   border: 1px solid #ccc;
@@ -276,8 +309,8 @@ header {
   height: 160px;
 }
 .section_projects_photos .section_projects_photo .section_projects_photo_area img {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
 }
 .section_projects_photos .section_projects_photo .section_projects_photo_area .section_projects_photo_info {
   display: none;
@@ -300,6 +333,18 @@ header {
 }
 .section_projects_photos .section_projects_photo .section_projects_photo_area:hover .section_projects_photo_info {
   display: flex;
+}
+@media (max-width: 500px) {
+  .section_projects_photos .section_projects_photo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .section_projects_photos .section_projects_photo .section_projects_photo_area {
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+  }
 }
 
 .bg_team {
@@ -479,10 +524,14 @@ header {
   background: #fff;
   width: 100%;
   min-width: 240px;
-  max-width: 250px;
+  max-width: 336px;
   padding: 20px;
   flex: 1;
   margin: 20px 10px;
+  border-radius: 15px;
+}
+.section_tables .section_table a {
+  margin: 30px auto 20px auto;
 }
 .section_tables .section_table .section_table_title,
 .section_tables .section_table .section_table_price,
@@ -1011,6 +1060,12 @@ header {
 
   .section_about_us {
     flex-direction: column;
+  }
+  .section_about_us .section_about_us_left {
+    padding: 0;
+  }
+  .section_about_us .section_about_us_left a.p-button {
+    margin: -5px auto 20px auto;
   }
   .section_about_us .section_about_us_right {
     width: auto;

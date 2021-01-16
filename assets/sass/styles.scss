@@ -104,6 +104,13 @@ header {
         h1 {
           font-size: 50px;
           font-weight: bold;
+          @media (max-width: 610px) {
+            font-size: 38px;
+          }
+
+          @media (max-width: 425px) {
+            font-size: 25px;
+          }
         }
 
         h1:nth-child(2) {
@@ -198,7 +205,6 @@ header {
   flex-wrap: wrap;
 
   .section_about_us_left {
-    padding: 20px;
     flex: 1;
 
     p {
@@ -206,6 +212,23 @@ header {
       font-size: 14px;
       line-height: 25px;
       min-width: 292px;
+      padding: 20px;
+    }
+
+    @media (max-width: 800px) {
+      p {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 25px;
+        min-width: 292px;
+        padding: 20px;
+      }
+      a.p-button {
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+        width: max-content;
+      }
     }
   }
   .section_about_us_right {
@@ -216,6 +239,9 @@ header {
     img {
       width: 480px;
       box-shadow: 0px 4px 7px #333;
+      @media (max-width: 500px) {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -251,6 +277,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  a {
+    margin: 20px auto;
+  }
 
   .section_projects_filters {
     border: 1px solid #ccc;
@@ -303,8 +333,8 @@ header {
       height: 160px;
 
       img {
-        width: inherit;
-        height: inherit;
+        width: 100%;
+        height: 100%;
       }
 
       .section_projects_photo_info {
@@ -330,6 +360,18 @@ header {
 
       &:hover .section_projects_photo_info {
         display: flex;
+      }
+    }
+
+    @media (max-width: 500px) {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .section_projects_photo_area {
+        width: 90%;
+        height: 200px;
+        margin: 20px auto;
       }
     }
   }
@@ -534,10 +576,16 @@ header {
     background: #fff;
     width: 100%;
     min-width: 240px;
-    max-width: 250px;
+    max-width: 336px;
     padding: 20px;
     flex: 1;
     margin: 20px 10px;
+    border-radius: 15px;
+
+    a {
+      margin: 30px auto 20px auto;
+    }
+
     .section_table_title,
     .section_table_price,
     .section_table_time {
@@ -1136,6 +1184,11 @@ header {
   .section_about_us {
     flex-direction: column;
     .section_about_us_left {
+      padding: 0;
+
+      a.p-button {
+        margin: -5px auto 20px auto;
+      }
     }
 
     .section_about_us_right {
