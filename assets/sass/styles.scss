@@ -405,6 +405,9 @@ header {
   overflow: hidden;
   max-width: 880px;
   margin: auto;
+  .swiper-pagination {
+    bottom: 0px !important;
+  }
   .sliders {
     width: 1000vw;
     height: 100%;

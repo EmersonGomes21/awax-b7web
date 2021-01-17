@@ -378,6 +378,9 @@ header {
   max-width: 880px;
   margin: auto;
 }
+.section_team .swiper-pagination {
+  bottom: 0px !important;
+}
 .section_team .sliders {
   width: 1000vw;
   height: 100%;
