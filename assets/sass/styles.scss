@@ -389,7 +389,12 @@ header {
     }
   }
 }
-
+.section_body .swiper-container {
+  overflow: inherit !important;
+  .swiper-wrapper {
+    overflow: hidden !important;
+  }
+}
 .bg_team {
   background-image: url("../images/bg-team.jpeg");
   background-size: cover;
@@ -397,12 +402,11 @@ header {
   padding: 0;
 }
 .section_team_area {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 50px;
 }
 
 .section_team {
-  overflow: hidden;
   max-width: 880px;
   margin: auto;
   .swiper-pagination {
@@ -411,6 +415,7 @@ header {
   .sliders {
     width: 1000vw;
     height: 100%;
+    overflow-x: hidden;
 
     .slide {
       width: 280px;
@@ -419,6 +424,7 @@ header {
       background: #fff;
       margin-right: 20px;
       min-height: 300px;
+      max-width: 280px;
 
       .slidearea {
         display: flex;

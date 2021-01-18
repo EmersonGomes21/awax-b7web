@@ -451,9 +451,10 @@
                   </div>
                 </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                
                 <!-- sliders end -->
              
+                <div class="swiper-pagination"></div>
               </div>
              
             </div>
@@ -473,8 +474,9 @@
         <div class="section_title">Happy clients</div>
         <div class="section_desc">client reviews</div>
 
-        <div class="section_body">
-          <div class="section_client">
+        <div class="swiper-container section_body ">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide section_client ">
             <img src="assets/media/homem2.png" alt="img client" />
             <h4 class="section_client_name">John Doe</h4>
             <span class="section_client_role">Head of PR Departament</span>
@@ -490,12 +492,42 @@
               Pellentesque ac lacus justo.
             </p>
 
-            <div class="sliders_pointers">
+            <!-- <div class="sliders_pointers">
+              <div class="pointer active"></div>
+              <div class="pointer"></div>
+              <div class="pointer"></div>
+            </div> -->
+          </div>
+
+
+          <!-- client 2 -->
+
+          <div class="swiper-slide section_client ">
+            <img src="assets/media/homem2.png" alt="img client" />
+            <h4 class="section_client_name">John Doe 2</h4>
+            <span class="section_client_role">Head of PR Departament 2</span>
+            <img
+              class="quote"
+              src="./assets/images/icones/quote.png"
+              alt="quaote icon"
+            />
+            <p class="section_client_comment">
+              ac ultrices. Sed risus risus, dignissim quis ligula egestas,
+              aliquet ultricies lectus. Pellentesque ac lacus justo.
+              Pellentesque sollicitudin orci aliquet ultricies lectus.
+              Pellentesque ac lacus justo.
+            </p>
+
+          
+          </div>
+        </div>
+     
+          <div class="swiper-pagination sliders_pointers">
               <div class="pointer active"></div>
               <div class="pointer"></div>
               <div class="pointer"></div>
             </div>
-          </div>
+       
         </div>
       </section>
 
@@ -972,27 +1004,76 @@
 
       });
 
-      var swiper = new Swiper(".section_team.swiper-container", {
+      var swiper3 = new Swiper(".section_team.swiper-container", {
         pagination: {
           el: ".swiper-pagination",
         },
         loop: true,
 
  slidesPerView: 3,
-  spaceBetween: 50,
+  
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2,
-      spaceBetween: 50
+      slidesPerView: 1,
+      spaceBetween: 20
     },
     // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 50
+    450: {
+      slidesPerView: 1,
+      spaceBetween: 100
     }
+    ,
+    // when window width is >= 600px
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    }
+
+    ,
+    // when window width is >= 480px
+    1050: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }  
+      });
+
+
+      var swiper1 = new Swiper(".client .section_body.swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        loop: true,
+
+ slidesPerView: 3,
   
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    450: {
+      slidesPerView: 1,
+      spaceBetween: 100
+    }
+    ,
+    // when window width is >= 600px
+    600: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    }
+
+    ,
+    // when window width is >= 480px
+    1050: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    }
   }  
       });
     </script>
