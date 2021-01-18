@@ -92,6 +92,9 @@ header {
   background-position: bottom;
   overflow: hidden; //para ignorar tudo que passar da sua largura
 
+  .swiper-pagination {
+    bottom: 71px !important;
+  }
   .sliders {
     width: 1000vw;
     height: 100%;

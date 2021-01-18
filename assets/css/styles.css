@@ -90,6 +90,9 @@ header {
   background-position: bottom;
   overflow: hidden;
 }
+.banner .swiper-pagination {
+  bottom: 71px !important;
+}
 .banner .sliders {
   width: 1000vw;
   height: 100%;
