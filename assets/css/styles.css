@@ -364,13 +364,6 @@ header {
   }
 }
 
-.section_body .swiper-container {
-  overflow: inherit !important;
-}
-.section_body .swiper-container .swiper-wrapper {
-  overflow: hidden !important;
-}
-
 .bg_team {
   background-image: url("../images/bg-team.jpeg");
   background-size: cover;
